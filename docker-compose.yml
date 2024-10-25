@@ -6,7 +6,7 @@ services:
     container_name: satisfy_php
     working_dir: /var/www/html
     ports:
-      - "${APP_PORT:-8001}:80"
+      - "${APP_PORT:-8001}:8001"
     volumes:
       - .:/var/www/html
       - ./docker/php/unit.json:/docker-entrypoint.d/config.json
